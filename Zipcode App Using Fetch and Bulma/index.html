@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <meta name="description"/>
+    <title>Location Finder</title>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css"/>
+    <link rel="stylesheet" href="styles.css"/>
+  </head>
+  <body>
+    <section class="hero hero-body is-dark container">
+      <h1 class="title">US Location Info</h1>
+      <h2 class="subtitle">Enter a zipcode to get the location info</h2>
+      <form id="zipForm">
+        <div class="field">
+          <div class="control has-icons-left has-icons-right">
+            <input class="input zip is-large" type="text" placeholder="Enter Zipcode"/><span class="icon is-small is-left"><i class="fas fa-map-pin"></i></span><span class="icon is-small is-right icon-check"><i class="fas fa-check"></i></span><span class="icon is-small is-right icon-times"><i class="fas fa-times"></i></span>
+          </div>
+          <p class="help is-success">This zipcode is available</p>
+        </div>
+      </form>
+    </section><br/>
+    <div class="container">
+      <div id="output"></div>
+    </div>
+    <div style="margin-top:500px;"></div>
+  </body>
+  <script src="main.js"></script>
+</html>

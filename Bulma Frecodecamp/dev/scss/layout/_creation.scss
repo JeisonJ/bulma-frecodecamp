@@ -1,0 +1,14 @@
+.creation {
+    flex-direction: column;
+    // flex-wrap: wrap;
+    .title {
+        justify-content: flex-end;
+        background-color: $color-7;
+    }
+    .image {
+        background-color: $color-1;
+    }
+    .description {
+        background-color: mix(white, $color-7, 5%);
+    }
+}

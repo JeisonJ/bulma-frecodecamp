@@ -1,0 +1,104 @@
+extends ../template/template
+
+block body
+
+  section.hero.is-fullheight.is-bold
+    .hero-head
+      header.navbar
+        .container
+          .navbar-brand
+            a.navbar-item(href="https://bulma.io")
+              img(src="https://bulma.io/images/bulma-logo.png" alt="Bulma: a modern CSS framework based on Flexbox" width="112" height="28")
+            .navbar-burger.burger(data-target="navbarExampleTransparentExample")
+                span
+                span
+                span
+
+          #navbarExampleTransparentExample.navbar-menu
+            .navbar-end
+              a.navbar-item.is-active(href="#") Home
+              a.navbar-item(href="#gallery") Gallery
+              a.navbar-item(href="#about") About
+
+    .hero-body
+      .container
+        h1.title.is-2  JeisonJ
+        h2.subtitle.is-5 Web programmer
+
+  //- .space
+
+  section.section
+    .container#gallery
+      h1.title.is-1.has-text-centered No se que dice aca
+
+      .columns
+        .column.is-half
+          .tile.is-parent
+            article.tile.is-child.notification
+              p.title Photo One
+              p.subtitle Photo by autor
+              figure.image.is-3by2
+                img(src="https://images.pexels.com/photos/219014/pexels-photo-219014.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940", alt="")
+        .column.is-half
+          .tile.is-parent
+            article.tile.is-child.notification
+              p.title Photo Two
+              p.subtitle Photo by autor
+              figure.image
+                img(src="https://images.pexels.com/photos/219014/pexels-photo-219014.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940", alt="")
+
+      .columns
+        .column.is-one-third
+          .tile.is-parent
+            article.tile.is-child.notification
+              p.title Photo Three
+              p.subtitle Photo by autor
+              figure.image
+                img(src="https://images.pexels.com/photos/219014/pexels-photo-219014.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940", alt="")
+        .column.is-one-third
+          .tile.is-parent
+            article.tile.is-child.notification
+              p.title Photo Four
+              p.subtitle Photo by autor
+              figure.image.is-3by2
+                img(src="https://images.pexels.com/photos/219014/pexels-photo-219014.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940", alt="")
+        .column.is-one-third
+          .tile.is-parent
+            article.tile.is-child.notification
+              p.title Photo Five
+              p.subtitle Photo by autor
+              figure.image
+                img(src="https://images.pexels.com/photos/219014/pexels-photo-219014.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940", alt="")
+
+      .columns
+        .column.is-half
+          .tile.is-parent
+            article.tile.is-child.notification
+              p.title Photo Six
+              p.subtitle Photo by autor
+              figure.image
+                img(src="https://images.pexels.com/photos/219014/pexels-photo-219014.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940", alt="")
+        .column.is-half
+          .tile.is-parent
+            article.tile.is-child.notification
+              p.title Photo Seven
+              p.subtitle Photo by autor
+              figure.image
+                img(src="https://images.pexels.com/photos/219014/pexels-photo-219014.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940", alt="")
+
+
+  section.hero.is-small.is-dark#about
+    .hero-body
+      .container
+        h1.title.is-spaced About Me
+        h2.subtitle 
+          |Lorem ipsum dolor sit amet consectetur adipisicing elit. Id nobis harum a, corporis ut ducimus, architecto accusantium voluptas sint rerum deleniti velit totam, aspernatur tempora quas eos voluptate ad dolorem. Temporibus quia molestias aut facere eum cumque soluta! Dolorem, dicta fugit. Ipsam rem laudantium pariatur deserunt, sapiente nihil facilis aperiam!
+          | Lorem ipsum dolor sit amet consectetur adipisicing elit. Id nobis harum a, corporis ut ducimus, architecto accusantium voluptas sint rerum deleniti velit totam, aspernatur tempora quas eos voluptate ad dolorem. Temporibus quia molestias aut facere eum cumque soluta! Dolorem, dicta fugit. Ipsam rem laudantium pariatur deserunt, sapiente nihil facilis aperiam!
+
+
+  footer.footer
+    .container
+      .content.has-text-centered
+        p Desing gallery by Jeison Perez
+      
+  //- div(style="margin-top:500px")

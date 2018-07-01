@@ -1,0 +1,14 @@
+input[type="email"] {
+    width: 100%;
+    appearance: none;
+    border: none;
+    border-color: #9bf1ff;
+    box-shadow: 0 0 0 1.3px rgba(68, 68, 68, 0.45);
+    border-radius: 1px;
+    outline: 0;
+    padding: 1em 0.5em;
+    text-decoration: none;
+    color: #444;
+    font-size: 0.9em;
+    background-color: $color-1;
+}

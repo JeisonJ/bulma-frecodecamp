@@ -1,0 +1,22 @@
+.portfolio {
+    flex-direction: column;
+    // flex-wrap: wrap;
+    .description {
+        flex: 2;
+        color: $color-1;
+        background-color: mix(white, $color-9, 10%);
+    }
+    .title {
+        // flex: 1;
+        padding-right: 0;
+        background-color: $color-9;
+    }
+    li {
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+        border-bottom: 1px solid #ddd;
+        a {
+            color: #008bda;
+        }
+    }
+}

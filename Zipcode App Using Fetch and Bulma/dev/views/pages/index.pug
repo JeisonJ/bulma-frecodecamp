@@ -1,0 +1,33 @@
+extends ../template/template
+
+block body
+
+  section.hero.hero-body.is-dark.container
+    h1.title US Location Info
+    h2.subtitle Enter a zipcode to get the location info
+    
+    form#zipForm
+      .field
+        .control.has-icons-left.has-icons-right
+          input.input.zip.is-large(type='text' placeholder='Enter Zipcode')
+          span.icon.is-small.is-left
+            i.fas.fa-map-pin
+          span.icon.is-small.is-right.icon-check
+            i.fas.fa-check
+          span.icon.is-small.is-right.icon-times
+            i.fas.fa-times
+        p.help.is-success This zipcode is available
+
+  br
+
+  .container
+    #output
+
+
+
+
+
+
+
+
+  div(style="margin-top:500px")

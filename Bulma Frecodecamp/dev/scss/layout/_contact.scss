@@ -1,0 +1,23 @@
+.contact {
+    flex-direction: column;
+    // flex-wrap: wrap;
+    .description {
+        background-color: $color-10;
+    }
+    .title {
+        justify-content: center;
+        background-color: mix(black, $color-10, 10%);
+    }
+    .form {
+        background-color: $color-10;
+        form {
+            width: 100%;
+            display: flex;
+            flex-flow: column nowrap;
+            justify-content: flex-end;
+        }
+        input {
+            margin-bottom: 0.4em;
+        }
+    }
+}

@@ -1,0 +1,40 @@
+$body-family: 'Raleway',
+sans-serif;
+;
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    // padding-bottom: 20em;
+    font-family: $body-family;
+    background-color: $color-2;
+}
+
+img {
+    max-width: 100%;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    color: $grey-dark;
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3 {
+    font-size: 1rem;
+    font-family: $body-family;
+}
+
+main {
+    margin-top: 2em;
+}

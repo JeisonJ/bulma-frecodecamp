@@ -1,0 +1,444 @@
+extends ../template/template
+
+block body
+
+  section.section
+    .container
+      //- HEADINGS
+      .block
+        h1.title Hello World!
+        h2.subtitle Hello World!
+        
+        //- Sizes
+        h1.title.is-1 Hello World!
+        h2.title.is-2 Hello World!
+        h3.title.is-3 Hello World!
+        h4.title.is-4 Hello World!
+        h5.title.is-5 Hello World!
+        h6.title.is-6 Hello World!
+
+      //- Content
+      .block
+        p.content.is-small Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam, dignissimos adipisci? Fugiat perspiciatis nostrum, adipisci sequi ratione fuga laudantium quam!
+        p.content.is-medium Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam, dignissimos adipisci? Fugiat perspiciatis nostrum, adipisci sequi ratione fuga laudantium quam!
+        p.content.is-large Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam, dignissimos adipisci? Fugiat perspiciatis nostrum, adipisci sequi ratione fuga laudantium quam!
+
+      //- Buttons
+      .block
+        button.button Button
+        button.button.is-white Button
+        button.button.is-light Button
+        button.button.is-dark Button
+        button.button.is-black Button
+        button.button.is-link Button
+      .block
+        a(href="#").button.is-primary Primary  
+        a(href="#").button.is-info Info  
+        a(href="#").button.is-success success
+        a(href="#").button.is-warning warning
+        a(href="#").button.is-danger danger
+      .block
+        a(href="#").button.is-primary.is-small Primary  
+        a(href="#").button.is-info.is-medium Info  
+        a(href="#").button.is-success.is-large success
+      .block
+        a(href="#").button.is-primary.is-outlined Primary  
+        a(href="#").button.is-info.is-outlined Info  
+        a(href="#").button.is-success.is-outlined success
+        a(href="#").button.is-warning.is-outlined warning
+        a(href="#").button.is-danger.is-outlined danger
+      .block
+        a(href="#").button.is-primary.is-inverted Primary  
+        a(href="#").button.is-info.is-inverted Info  
+        a(href="#").button.is-success.is-inverted success
+        a(href="#").button.is-warning.is-inverted warning
+        a(href="#").button.is-danger.is-inverted danger
+      .block
+        a(href="#").button.is-primary.is-hovered hovered  
+        a(href="#").button.is-info.is-focused focused  
+        a(href="#").button.is-success.is-active active
+        a(href="#").button.is-warning.is-loading loading
+        a(href="#", disabled).button.is-danger disabled
+
+      //- Box
+      .block
+        .box
+          h1.title Hello World
+          p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti reiciendis expedita est a? Aspernatur necessitatibus ipsum, labore modi cupiditate ipsam vero, velit reiciendis iste veniam eligendi quae, impedit ea alias?
+
+      .block
+        .notification.is-primary
+          button.delete
+          |Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, error?
+        .notification.is-info 
+          button.delete
+          |Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, error?
+        .notification.is-success 
+          button.delete
+          |Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, error?
+        .notification.is-warning 
+          button.delete
+          |Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, error?
+        .notification.is-danger 
+          button.delete
+          |Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, error?
+        
+      
+      //- Tags
+      .block
+        span.tag Hello
+        span.tag Hello
+        span.tag.is-black Hello
+        span.tag.is-dark Hello
+        span.tag.is-light Hello
+        span.tag.is-white Hello
+        span.tag.is-info Hello
+        span.tag.is-success Hello
+        span.tag.is-warning.is-medium Hello
+        span.tag.is-danger.is-large Hello 
+          button.delete
+
+
+      //- Messages
+      .block
+        article.message.is-primary
+          .message-header
+            p About Us
+          .message-body
+            | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus eum minus expedita odio velit nihil laudantium laborum aut labore blanditiis? Quo aut sunt consequatur voluptate dolores sint recusandae voluptatum soluta asperiores molestiae fugiat doloribus, unde id, necessitatibus at provident voluptas.
+        article.message.is-warning
+          .message-header
+            p About Us
+          .message-body
+            | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus eum minus expedita odio velit nihil laudantium laborum aut labore blanditiis? Quo aut sunt consequatur voluptate dolores sint recusandae voluptatum soluta asperiores molestiae fugiat doloribus, unde id, necessitatibus at provident voluptas.
+        article.message.is-danger
+          .message-header
+            p About Us
+          .message-body
+            | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus eum minus expedita odio velit nihil laudantium laborum aut labore blanditiis? Quo aut sunt consequatur voluptate dolores sint recusandae voluptatum soluta asperiores molestiae fugiat doloribus, unde id, necessitatibus at provident voluptas.
+        
+
+        //- Navbar
+        .block
+          nav.navbar.is-transparent
+            .navbar-brand
+              a.navbar-item(href="https://bulma.io")
+                img(src="https://bulma.io/images/bulma-logo.png" alt="Bulma: a modern CSS framework based on Flexbox" width="112" height="28")
+              .navbar-burger.burger(data-target="navbarExampleTransparentExample")
+                span
+                span
+                span
+            #navbarExampleTransparentExample.navbar-menu
+              .navbar-start(style="margin-left: auto; margin-right: 0;")
+                a.navbar-item
+                  span.icon
+                    i.fab.fa-twitter
+                a.navbar-item
+                  span.icon
+                    i.fab.fa-youtube
+                a.navbar-item
+                  span.icon
+                    i.fab.fa-github
+                  
+              .navbar-end
+                a.navbar-item Home
+                a.navbar-item About
+                a.navbar-item Contact
+
+        
+        .block
+          aside.menu
+            p.menu-label Label 1
+            ul.menu-list
+              li
+                a(href="#") Link 1
+              li
+                a(href="#") Link 2
+            p.menu-label Label 2
+            ul.menu-list
+              li
+                a(href="#").is-active Link 1
+                ul.menu-list
+                  li
+                    a(href="#") Link 1
+                  li
+                    a(href="#") Link 2
+              li
+                a(href="#") Link 2
+
+
+        //- Hero
+        .block
+          .hero.is-primary
+            .hero-body
+              .container
+                h1.title Hero title
+                h2.subtitle  Hero subtitle
+          .hero.is-success
+            .hero-body
+              .container
+                h1.title Hero title
+                h2.subtitle  Hero subtitle
+          .hero.is-warning
+            .hero-body
+              .container
+                h1.title Hero title
+                h2.subtitle  Hero subtitle
+          .hero.is-danger
+            .hero-body
+              .container
+                h1.title Hero title
+                h2.subtitle  Hero subtitle
+        
+
+        //- Cards
+        .block
+          .card
+            .card-content
+              p.title Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque, sint?
+            .card-footer
+              p.card-footer-item
+                span <a href="#"><i class="fab fa-twitter"></i> Twitter</a>
+              p.card-footer-item
+                span <a href="#"><i class="fab fa-facebook"></i> Facebook </a>
+
+
+        //- Pagination
+        .block
+          nav.pagination
+            a(href="#" disabled).pagination-previous Previous
+            a(href="#").pagination-next Next page
+            ul.pagination-list
+              li
+                a(href="").pagination-link.is-current 1
+              li
+                a(href="").pagination-link 2
+              li
+                a(href="").pagination-link 3
+
+
+        //- Level
+        .block
+          .level
+            //- left side
+            .level-left
+              p.level-item
+                a(href="#") <strong>All</strong>
+              p.level-item
+                a(href="#") Publiched
+              p.level-item
+                a(href="#") Draft
+              p.level-item
+                a(href="#") Deleted
+              p.level-item
+                a(href="#", class="button is-primary") New
+
+            //- right side
+            .level-right
+              .level-item
+                .field
+                  p.control
+                    input.input(type="text", placeholder="Search post...")
+
+        
+        //- Forms
+        .block
+          form
+            .field
+              label.label Name
+              input.input(type="text" placeholder="Enter name")
+            .field
+              label.label Name
+              input.input.is-success(type="text" placeholder="Enter name")
+            .field
+              label.label Name
+              input.input.is-danger(type="text" placeholder="Enter name")
+
+            .field
+              label.label Package
+              p.control
+                span.select
+                  select
+                    option Select dropdown
+                    option Simple
+                    option Standard
+                    option  Super
+
+            .field
+              label.label Message
+              p.control
+                textarea.textarea(cols="30", rows="10" placeholder="Textarea")
+
+          
+        //- Attached
+        .block
+          .field.has-addons
+            p.control
+              input.input(type="text" placeholder="Enter keywords...")
+            p.control
+              a.button.is-info(href="#") Search
+
+        .block
+          .field.has-addons
+            p.control
+            span.select
+              select
+                option $
+                option $$
+                option $$$
+            p.control
+              input.input(type="text" placeholder="Enter amount...")
+            p.control
+              a.button.is-info(href="#") Pay
+
+
+        //- Tables
+        .block
+          table.table.is-fullwidth
+            thead
+              th Name
+              th Email
+              th Phone
+            tbody
+              tr
+                td John Doe
+                td rgrimes@gmail.com
+                td 112-258-2525
+              tr
+                td John Doe
+                td rgrimes@gmail.com
+                td 112-258-2525
+              tr
+                td John Doe
+                td rgrimes@gmail.com
+                td 112-258-2525
+              tr
+                td John Doe
+                td rgrimes@gmail.com
+                td 112-258-2525
+
+        .block
+          table.table.is-fullwidth.is-striped
+            thead
+              th Name
+              th Email
+              th Phone
+            tbody
+              tr
+                td John Doe
+                td rgrimes@gmail.com
+                td 112-258-2525
+              tr
+                td John Doe
+                td rgrimes@gmail.com
+                td 112-258-2525
+              tr
+                td John Doe
+                td rgrimes@gmail.com
+                td 112-258-2525
+              tr
+                td John Doe
+                td rgrimes@gmail.com
+                td 112-258-2525
+
+        .block
+          table.table.is-fullwidth.is-bordered
+            thead
+              th Name
+              th Email
+              th Phone
+            tbody
+              tr
+                td John Doe
+                td rgrimes@gmail.com
+                td 112-258-2525
+              tr
+                td John Doe
+                td rgrimes@gmail.com
+                td 112-258-2525
+              tr
+                td John Doe
+                td rgrimes@gmail.com
+                td 112-258-2525
+              tr.is-selected
+                td John Doe
+                td rgrimes@gmail.com
+                td 112-258-2525
+
+          .block
+          table.table.is-fullwidth.is-narrow.is-striped
+            thead
+              th Name
+              th Email
+              th Phone
+            tbody
+              tr
+                td John Doe
+                td rgrimes@gmail.com
+                td 112-258-2525
+              tr
+                td John Doe
+                td rgrimes@gmail.com
+                td 112-258-2525
+              tr
+                td John Doe
+                td rgrimes@gmail.com
+                td 112-258-2525
+              tr
+                td John Doe
+                td rgrimes@gmail.com
+                td 112-258-2525
+
+        
+        //- Grid system
+        .block
+          .columns
+            .column
+              p.notification First column
+            .column
+              p.notification Second column
+            .column
+              p.notification Third column
+            .column
+              p.notification Fourth column
+
+        .block
+          .columns
+            .column.is-2
+              p.notification 2 column
+            .column.is-8
+              p.notification 8 column
+            .column.is-2
+              p.notification 2 column
+
+        .block
+          .columns
+            .column.is-three-quarters
+              p.notification .is-three-quarters
+            .column
+              p.notification Auto
+            .column
+              p.notification Auto
+
+        .block
+          .columns
+            .column.is-two-thirds
+              p.notification .is-two-thirds
+            .column
+              p.notification Auto
+            .column
+              p.notification Auto
+
+        .block
+          .columns
+            .column.is-half
+              p.notification .is-half
+            .column
+              p.notification Auto
+            .column
+              p.notification Auto
+        
+
+
+
+      div(style="margin-top:500px")

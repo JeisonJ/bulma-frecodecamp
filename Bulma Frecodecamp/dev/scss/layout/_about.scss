@@ -1,0 +1,13 @@
+.about {
+    flex-direction: column;
+    // flex-wrap: wrap;
+    .photo {
+        background-color: $color-1;
+    }
+    .description {
+        background-color: mix(black, $color-5, 5%);
+    }
+    .title {
+        background-color: $color-5;
+    }
+}
